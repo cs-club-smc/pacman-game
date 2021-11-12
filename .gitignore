@@ -1,9 +1,10 @@
-*.log
-
-dist/**
-build/**
-out/**
-
+# node_modules is a directory created by our package manager (e.g. npm or
+# yarn). It contains potentially hundreds of megabytes of files, so we want
+# Git to ignore those
 node_modules/
 
+# Files like `.env` hold potentially secret information, like
+# `API_KEY=d41d8cd98f00b204e9800998ecf8427e`. Don't track them
 .env*
+
+*.log
