@@ -50,7 +50,7 @@ cd pacman-game
 
 I would _highly_ recommend downloading the [EditorConfig](https://editorconfig.org) and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) VSCode extensions. Both EditorConfig and Prettier are used so all contributors add code with the same coding style. For example, the [./.editorconfig](./.editorconfig) and [./.prettierrc.json](./.prettierrc.json) files tell the VSCode extensions not to add `;` to the end of lines, and to write strings like `'my-string'` instead of `"my-string"`, among other things
 
-VSCode is configured to automatically format the code with Prettier when you save a file. Under the hood, VSCode reads [`./vscode/settings.json`](./vscode/settings.json), and tells the Prettier extension to format the file
+VSCode is configured to automatically format the code with Prettier when you save a file. Under the hood, VSCode reads [`./vscode/settings.json`](./.vscode/settings.json), and tells the Prettier extension to format the file
 
 ### 4. Running the code
 
@@ -60,7 +60,7 @@ There are two main ways to run the code
 
 The first method is within VSCode. Open the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette) (`Ctrl+Shift+P` or `F1`), and choose `Tasks: Run Task`. Then choose `Start NodeJS Server`. A terminal within VSCode should pop up, with the result of running the app
 
-Under the hood, VSCode reads [./.vscode/tasks.json](./vscode/tasks.json), and executes the command `yarn run start`
+Under the hood, VSCode reads [./.vscode/tasks.json](./.vscode/tasks.json), and executes the command `yarn run start`
 
 #### 4.2 Terminal
 
