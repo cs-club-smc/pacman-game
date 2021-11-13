@@ -35,6 +35,12 @@ To install Yarn, run the following in a terminal
 npm --global install yarn
 ```
 
+If you encounter an error here, try the following
+
+```sh
+npm install -g yarn
+```
+
 You have just installed a package manager... with another package manager 😎
 
 ### 2. Cloning this repository
