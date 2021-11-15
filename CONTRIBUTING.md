@@ -1,20 +1,26 @@
 # Contributing
 
+Haiii ^w^, welcome to `pacman-game`!
+
+You can jump to 'Getting Started' if you are ready for running this project on your computer; if not see 'Learning' if you're not really sure where to start
+
+## Learning
+
+If you're not sure where to start, I would recommend watching either the first three videos of the [Git and GitHub for Poets](https://www.youtube.com/watch?v=BCQHnlnPusY&list=PLozRqGzj97d02YjR5JVqDwN2K0cAiT7VK) series by The Coding Train, or this [How to Contribute to an Open Source Project on GitHub](https://egghead.io/lessons/javascript-introduction-to-github) mini-course by Kent C. Dodds. The former is longer and more conceptual while the latter is shorter and focuses more on real-world usage. There is also this [100 Second video](https://www.youtube.com/watch?v=8lGpZkjnkt4) by Fireship
+
+Once you are more familiar with Git, you are now ready to make a PR. I found  short video to be helpful in showing the whole pull request workflow, but you may need to use Google if you are not using Git through the command line, or run into errors
+
 ## Getting Started
 
-Haiii ^w^, welcome to `pacman-game`! To get the project running on your local development machine, you can follow the steps outlined below
+Before you perform the following steps, you'll want to _Fork_ this repository, then _Clone_ it.
 
-If there is something that sounds confusing or not working, let me know since that's an issue with my writing
-
-I heard that people were looking to make this game with NodeJS during a meeting, so that's what I started with. If people want to use something like `p5.js`, just like for the Tic-Tac-Toe game, that is an option too
-
-### 1. Installing NodeJS
+### 1. Installing NodeJS and Yarn
 
 We are using [NodeJS](https://nodejs.org/en) as a backend server. This lets us write JavaScript that serves files, and responds to requests from browsers.
 
 The most popular way to install NodeJS is through the [installer on the official website](https://nodejs.org). Follow the installation instructions for your operating system. As for versions, you can choose either the latest LTS (`16.13.0` at the time of writing), or the latest stable release (`17.1.0` at the time of writing)
 
-To optionally check if NodeJS has been properly installed, you can open a terminal (Term.app on MacOS, or Powershell on Windows) and see if you get the following output:
+To optionally check if NodeJS has been properly installed, you can open a terminal and see if you get the following output:
 
 ```sh
 $ node --version
@@ -29,13 +35,7 @@ Once you have done this, you'll want to install a package manager for NodeJS. Pa
 - Has a much nicer / more readable output
 - Does not print irrelevant errors / warnings
 
-To install Yarn, run the following in a terminal
-
-```sh
-npm --global install yarn
-```
-
-If you encounter an error here, try the following
+To install Yarn, run the following
 
 ```sh
 npm install -g yarn
@@ -54,7 +54,7 @@ cd pacman-game
 
 ### 3. VSCode amenities
 
-I would _highly_ recommend downloading the [EditorConfig](https://editorconfig.org) and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) VSCode extensions. Both EditorConfig and Prettier are used so all contributors add code with the same coding style. For example, the [./.editorconfig](./.editorconfig) and [./.prettierrc.json](./.prettierrc.json) files tell the VSCode extensions not to add `;` to the end of lines, and to write strings like `'my-string'` instead of `"my-string"`, among other things
+I would _highly_ recommend installing the [EditorConfig](https://editorconfig.org) and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) VSCode [extensions](https://code.visualstudio.com/docs/editor/extension-marketplace). Both EditorConfig and Prettier are used so all contributors add code with the same coding style. For example, the [./.editorconfig](./.editorconfig) and [./.prettierrc.json](./.prettierrc.json) files tell the VSCode extensions not to add `;` to the end of lines, and to write strings like `'my-string'` instead of `"my-string"`, among other things
 
 VSCode is configured to automatically format the code with Prettier when you save a file. Under the hood, VSCode reads [`./vscode/settings.json`](./.vscode/settings.json), and tells the Prettier extension to format the file
 
@@ -78,10 +78,13 @@ yarn run start
 
 Undner the hood, `yarn` will read [./package.json](./package.json), and run the `"start"` script, or `node src/index.js`
 
-### Finished!
+### 5. Finished!
 
 And now you are done!
 
 <img alt='Red Panda celebrating' src='./assets/red-panda-celebrate.png' width='200'>
 
 Art by [Pulex](https://www.pulexart.com)
+
+From here, you are ready to make a PR! Feel free to make a PR to this repostory, such as adding printed lines in [./src/index.js](./src/index.js) or fixing typos, especially if you've never made a PR before
+
