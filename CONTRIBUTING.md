@@ -8,7 +8,7 @@ You can jump to 'Getting Started' if you are ready for running this project on y
 
 If you're not sure where to start, I would recommend watching either the first three videos of the [Git and GitHub for Poets](https://www.youtube.com/watch?v=BCQHnlnPusY&list=PLozRqGzj97d02YjR5JVqDwN2K0cAiT7VK) series by The Coding Train, or this [How to Contribute to an Open Source Project on GitHub](https://egghead.io/lessons/javascript-introduction-to-github) mini-course by Kent C. Dodds. The former is longer and more conceptual while the latter is shorter and focuses more on real-world usage. There is also this [100 Second video](https://www.youtube.com/watch?v=8lGpZkjnkt4) by Fireship
 
-Once you are more familiar with Git, you are now ready to make a PR. I found  short video to be helpful in showing the whole pull request workflow, but you may need to use Google if you are not using Git through the command line, or run into errors
+Once you are more familiar with Git, you are now ready to make a PR. I found [this](https://www.youtube.com/watch?v=rgbCcBNZcdQ) short video to be helpful in showing the whole pull request workflow, but you may need to use Google if you are not using Git through the command line, or run into errors
 
 ## Getting Started
 
@@ -38,7 +38,7 @@ Once you have done this, you'll want to install a package manager for NodeJS. Pa
 To install Yarn, run the following
 
 ```sh
-npm install -g yarn
+$ npm install -g yarn
 ```
 
 You have just installed a package manager... with another package manager 😎
@@ -48,8 +48,8 @@ You have just installed a package manager... with another package manager 😎
 Once you have NodeJS and Yarn installed, you are ready to clone this repository. Use your favorite Git client! For those that wish to use the terminal, enter the following
 
 ```sh
-git clone https://github.com/cs-club-smc/pacman-game
-cd pacman-game
+$ git clone https://github.com/cs-club-smc/pacman-game
+$ cd pacman-game
 ```
 
 ### 3. VSCode amenities
@@ -73,7 +73,7 @@ Under the hood, VSCode reads [./.vscode/tasks.json](./.vscode/tasks.json), and e
 The second method is using the Terminal. Navigate to this project directory, and run
 
 ```sh
-yarn run start
+$ yarn run start
 ```
 
 Undner the hood, `yarn` will read [./package.json](./package.json), and run the `"start"` script, or `node src/index.js`
